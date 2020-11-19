@@ -17,7 +17,6 @@ body {
 
 .main {
 	display: flex;
-	/* display: none; */
 	align-items: center;
 	justify-content: center;
 	width: 100%;
@@ -79,6 +78,7 @@ body {
 	height: 100%;
 	box-shadow: 0 0 20px 4px black;
 	transition: transform 1s;
+	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
 
@@ -100,20 +100,17 @@ body {
 	justify-content: center;
 	background: url('./img/cardback.png') no-repeat;
 	background-size: cover;
-	transform: perspective(300) rotateY(0);
 }
 
 .card--flipped .card__front,
 .card--winner .card__front {
 	transform: rotateY(0deg);
-	transform: perspective(300) rotateY(180deg);
 }
 
 .card--flipped .card__back,
 .card--winner .card__back {
 	z-index: 950;
 	transform: rotateY(180deg);
-	transform: perspective(300) rotateY(0deg);
 }
 
 .card--blocked,
