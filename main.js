@@ -198,7 +198,6 @@
 			endScreen.style.display = 'none';
 			returnGame();
 			clearInterval(intervalId);
-			setTimer(rows);
 		});
 	}
 
@@ -295,7 +294,6 @@
 	returnBtn.addEventListener('click', returnGame);
 	returnBtn.addEventListener('click', () => {
 		clearInterval(intervalId);
-		setTimer(rows);
 	});
 	table.addEventListener('click', flipCard);
 })();
