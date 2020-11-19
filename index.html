@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>Игра "Найди пары"</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Engagement&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<script defer src="main.js"></script>
+</head>
+
+<body>
+	<main class="main">
+		<section class="start">
+			<h2 class="start__title">Знаменитая игра "Пары"</h2>
+			<p class="start__descr">Открывайте попарно карты, пока числа на этих картах не совпадут. Для победы необходимо
+				открыть все пары карт.</p>
+			<p class="start__descr">И помните - время ограничено.</p>
+			<p class="start__choose-level">Выберите уровень сложности</p>
+			<div class="start__levels">
+				<button class="start__level-btn level-btn btn" data-rows="2">
+					<span class="level-btn__border btn__border">
+						<span class="level-btn__text btn__text">Очень легко</span>
+					</span>
+				</button>
+				<button class="start__level-btn btn--checked level-btn btn" data-rows="4">
+					<span class="level-btn__border btn__border btn__border">
+						<span class="level-btn__text btn__text btn__text">Легко</span>
+					</span>
+				</button>
+				<button class="start__level-btn level-btn btn" data-rows="6">
+					<span class="level-btn__border btn__border">
+						<span class="level-btn__text btn__text">Сложно</span>
+					</span>
+				</button>
+				<button class="start__level-btn level-btn btn" data-rows="8">
+					<span class="level-btn__border btn__border">
+						<span class="level-btn__text btn__text">Очень сложно</span>
+					</span>
+				</button>
+				<button class="start__level-btn level-btn btn" data-rows="10">
+					<span class="level-btn__border btn__border">
+						<span class="level-btn__text btn__text">Боль и страдания!</span>
+					</span>
+				</button>
+			</div>
+			<button class="start__begin-btn btn begin-btn">
+				<span class="begin-btn__border btn__border">
+					<span class="begin-btn__text btn__text">Начать игру</span>
+				</span>
+			</button>
+		</section>
+		<section class="table">
+		</section>
+		<section class="end">
+			<p class="end__descr"></p>
+			<button class="end__restart btn">
+				<span class="btn__border">
+					<span class="btn__text">Начать заново</span>
+				</span>
+			</button>
+			<button class="end__return btn">
+				<span class="btn__border">
+					<span class="btn__text">На главную</span>
+				</span>
+			</button>
+		</section>
+	</main>
+	<aside class="aside">
+		<div class="aside__timer">
+			<span class="timer__min">1</span>
+			<span class="divider">:</span>
+			<span class="timer__sec">10</span>
+		</div>
+		<button class="aside__restart btn">
+			<span class="btn__border">
+				<span class="btn__text">Начать заново</span>
+			</span>
+		</button>
+		<button class="aside__return btn">
+			<span class="btn__border">
+				<span class="btn__text">На главную</span>
+			</span>
+		</button>
+	</aside>
+</body>
+
+</html>
